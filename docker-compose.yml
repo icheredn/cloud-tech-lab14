@@ -2,8 +2,9 @@ version: '3'
 services:
   react:
     stdin_open: true
-    build:
-      context: .
-      dockerfile: Dockerfile
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
+    image: ivancheredn/lab14:eb_react
     ports:
       - "80:8888"
